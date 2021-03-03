@@ -1,0 +1,396 @@
+  html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: 'Montserrat', 'Arial Black', sans-serif;
+    font-size: 16px;
+    background: #343838;
+}
+
+/* text */
+
+  h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    padding-bottom: .25em;
+}
+
+  h2 {
+    font-size: 1em;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+  h3 {
+    font-size: .8em;
+    font-weight: normal;
+    color: #FFF;
+    text-align: center;
+    z-index: 1;
+    line-height: 2em;
+}
+
+  a {
+    color: #DDD;
+    text-decoration: none;
+    font-size: .7em;
+}
+  a:hover {
+    color: #FFF;
+}
+
+  p {
+    color: #FFF;
+    font-size: .7em;
+    text-align: center;
+}
+
+  /* placeholder text colour */
+  ::-webkit-input-placeholder {
+     color: #EEE;
+     font-size: .65em;
+}
+  :-moz-placeholder {
+     color: #EEE;
+     font-size: .65em;
+}
+  ::-moz-placeholder {
+     color: #EEE;
+     font-size: .65em;
+}
+  :-ms-input-placeholder {
+     color: #EEE;
+     font-size: .65em;
+}
+
+
+
+/* body */
+
+  html, body {
+    height: 100%;
+}
+
+  img.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+    min-height: 100%;
+    min-width: 1280px;
+    width: 100%;
+    height: auto;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,.3);
+}
+
+  #content {
+    position: absolute;
+    height: 60vh;
+    width: 70vw;
+    margin-top: 17.5vh;
+    margin-left: 12.5vw;
+    text-align: center;
+    z-index: 3;
+    border: solid .25em #FFF
+}
+ #content h1, h2, a, form {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+            }
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+  @-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+  @-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+  @-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+  #header {
+    position: absolute;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    width: 70vw;
+    text-align: center;
+}
+
+  #login {
+    position: absolute;
+    text-align: center;
+    left: auto;
+    right: auto;
+    width: 70vw;
+    margin-top: 27.5vh;
+    font-size: 1em;
+    color: #FFF;
+}
+  img.email, img.password {
+    position: absolute;
+    width: .75em;
+    margin-left: .3em;
+    margin-top: 1.75vh;
+    z-index: -1;
+}
+
+  .shell {
+    height: 6vh;
+    width: 50vw;
+    text-align: center;
+    background-color: rgba(255,255,255,.35);
+    border: none;
+    margin-bottom: .3125em;
+    border-radius: 2px;
+    border: 0;
+    color: #FFF;
+  }
+
+  .shell.focus {
+}
+
+  input[type=submit] {
+    height: 6vh;
+    width: 50vw;
+    border-radius: 2px;
+    margin-top: 15px;
+    border: 0;
+    color: #FFF;
+    background: rgba(100,125,255,.45);
+}
+
+  input[type=submit]:hover {
+    background: rgba(70,95,255,.55);
+}
+
+  #signup {
+    float: right;
+
+    margin-top: .375em;
+    margin-right: .375em;
+
+    padding-top: .0624em;
+    padding-bottom: .3125em;
+    padding-right: .75em;
+    padding-left: .75em;
+
+    border: 0;
+    border-radius: .125em;
+
+    z-index: 0;
+    background: rgba(255,255,255,.35);
+
+    font-size: 1.3em;
+}
+
+/* media query */
+
+
+  @media all and (min-width: 1450px){
+
+  ::-webkit-input-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  :-moz-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  ::-moz-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  :-ms-input-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  #content {
+    width: 22.5vw;
+    height: 47.5vh;
+    margin-top: 20vh;
+    margin-left: 40vw;
+}
+  #header {
+    width: 22.5vw;
+}
+  #login {
+    width: 22.5vw;
+    margin-top: 25vh;
+}
+  img.email, img.password {
+    width: 1em;
+    margin-left: .3em;
+    margin-top: 1.2vh
+}
+  .shell {
+    width: 12.5vw;
+    height: 4vh;
+}
+   input[type=submit] {
+    width: 12.5vw;
+    height: 4vh;
+}
+    #signup {
+
+    margin-top: .625em;
+    margin-right: .625em;
+
+    padding-top: .15em;
+    padding-bottom: .4em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+}
+
+
+  @media all and (max-width: 1449px) and (min-width: 1000px){
+
+  ::-webkit-input-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  :-moz-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  ::-moz-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  :-ms-input-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  #content {
+    width: 40vw;
+    margin-top: 20vh;
+    margin-left: 30vw;
+}
+  #header {
+    width: 40vw;
+}
+  #login {
+    width: 40vw;
+}
+  img.email, img.password {
+    width: 1em;
+    margin-left: .3em;
+    margin-top: 1.5vh
+}
+  .shell {
+    width: 20vw;
+    height: 5vh;
+}
+   input[type=submit] {
+    width: 20vw;
+    height: 5vh;
+}
+   #signup {
+
+    margin-top: .625em;
+    margin-right: .625em;
+
+    padding-top: .11em;
+    padding-bottom: .3em;
+    padding-right: .8em;
+    padding-left: .8em;
+}
+}
+
+  @media all and (max-width: 999px) and (min-width: 620px){
+  ::-webkit-input-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  :-moz-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  ::-moz-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  :-ms-input-placeholder {
+     color: #EEE;
+     font-size: .8em;
+}
+  #content {
+    width: 60vw;
+    margin-top: 20vh;
+    margin-left: 20vw;
+}
+  #header {
+    width: 60vw;
+}
+  #login {
+    width: 60vw;
+}
+  img.email, img.password {
+    width: 1em;
+    margin-left: .3em;
+    margin-top: 1.5vh
+}
+  .shell {
+    width: 30vw;
+    height: 5vh;
+}
+   input[type=submit] {
+    width: 30vw;
+    height: 5vh;
+}
+  #signup {
+
+    margin-top: .625em;
+    margin-right: .625em;
+
+    padding-top: .11em;
+    padding-bottom: .3em;
+    padding-right: .8em;
+    padding-left: .8em;
+}
+}
