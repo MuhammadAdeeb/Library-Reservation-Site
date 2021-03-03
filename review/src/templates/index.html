@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <title>LoginForm</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static%}
+    <link rel="stylesheet" media="screen" href="{% static 'pages/reset.css'%}" />
+    <link rel="stylesheet" media="screen" href="{% static 'pages/screen.css'%}" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <img src="{%static 'pages/111.jpg'%}" class="bg" alt="a hypnotic background img of london architecture">
+    <div id="overlay"></div>
+    
+    <div id="content">
+      <div id="header">
+	<h1>Book IIT</h1>
+	<h2>study space reservation portal</h2>
+      </div>
+
+      <div id= "login">
+        <form>
+          <img src="{% static 'pages/email.svg'%}" class="email" alt="email"><input type="email" class="shell" name="email" required placeholder="         youremail@hawk.iit.edu" autofocus="autofocus"><br>
+          <img src="{% static 'pages/password.svg''"} class="password" alt="password"><input type="text" class="shell" name="password" required placeholder="6 characters minimum" ><br>
+          <input type="submit" class="in" value="Sign in">
+        </form>
+        <a href="">forgot your password?</a>
+      </div>
+    </div>
+  
+    <!-- 
+    <div id="signup">
+     <a href="">Sign up</a>
+    </div>
+    -->
+
+  </body>
